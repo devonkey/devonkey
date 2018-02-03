@@ -1,0 +1,5 @@
+#创建数据库
+create database activiti;
+create user 'hugo'@'%' identified by '.hugo.';
+set password for 'hugo'@'%' = password('.hugo.');
+GRANT ALL ON activiti.* to 'hugo'@'%';
